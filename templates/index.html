@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong Client</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        #response {
+            margin-top: 20px;
+            font-size: 24px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ping-Pong Client</h1>
+    <form method="POST">
+        <button type="submit">Send Ping</button>
+    </form>
+
+    {% if response %}
+    <div id="response">{{ response }}</div>
+    {% endif %}
+</body>
+</html>
