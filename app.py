@@ -7,7 +7,7 @@ app = Flask(__name__)
 def send_ping():
     try:
         # Use the Replit public URL as the host (Replace this with the actual server URL)
-        host = "https://replit.com/@bidiyi5747/ownbankserver"  # Replace with your Replit server's URL
+        host = "https://ownbankserver.onrender.com"  # Replace with your Replit server's URL
         port = 12345  # Port the server is listening on
 
         # Create a socket object
